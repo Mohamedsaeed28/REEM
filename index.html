@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+text-align:center;
+background:#ffccd5;
+font-family:Arial;
+}
+h1{
+margin-top:100px;
+color:#d6336c;
+}
+button{
+padding:10px 20px;
+margin:10px;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+#yes{
+background:green;
+color:white;
+}
+#no{
+background:red;
+color:white;
+position:absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Reem ❤️<br>مش عاوز ردك دلوقتي بس قلبي اختارك<br>فيه فرصه تبقي ليا؟ ❤️</h1>
+<button id="yes">ممكن احبك كده كده   💖</button>
+<button id="no">اديني وقتي  😅</button>
+
+<script>
+let noBtn = document.getElementById("no");
+
+noBtn.onmouseover = function(){
+noBtn.style.left = Math.random()*90 + "%";
+noBtn.style.top = Math.random()*90 + "%";
+}
+
+document.getElementById("yes").onclick = function(){
+document.body.innerHTML = "<h1>انتي اجمل حاجه حصلتلي ومش ممكن اتنازل عنك بسهوله ابدا</h1>";
+}
+</script>
+
+</body>
+</html>
