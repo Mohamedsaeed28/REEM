@@ -36,8 +36,9 @@ position:absolute;
 <body>
 
 <h1>Reem ❤️<br>مش عاوز ردك دلوقتي بس قلبي اختارك<br>فيه فرصه تبقي ليا؟ ❤️</h1>
-<button id="yes">ممكن احبك كده كده   💖</button>
-<button id="no">اديني وقتي  😅</button>
+
+<button id="yes">ممكن احبك كده كده 💖</button>
+<button id="no">اديني وقتي 😅</button>
 
 <script>
 let noBtn = document.getElementById("no");
@@ -48,7 +49,15 @@ noBtn.style.top = Math.random()*90 + "%";
 }
 
 document.getElementById("yes").onclick = function(){
-document.body.innerHTML = "<h1>انتي اجمل حاجه حصلتلي ومش ممكن اتنازل عنك بسهوله ابدا</h1>";
+
+// 👇 تظهر الرسالة الأول
+document.body.innerHTML = "<h1>انتي اجمل حاجه حصلتلي ومش ممكن اتنازل عنك بسهوله ابدا ❤️</h1>";
+
+// 👇 وبعد 3 ثواني يفتح واتساب
+setTimeout(function(){
+window.location.href = "https://wa.me/971529235314?text=أنا موافقة ❤️";
+}, 3000);
+
 }
 </script>
 
